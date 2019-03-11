@@ -1,10 +1,10 @@
-## Welcome to GitHub Pages
+## Dom Dent
 
-You can use the [editor on GitHub](https://github.com/domdent/pages/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Dom is a physics student at the University of Manchester.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Link to Dom's [GitHub](https://github.com/domdent/).
 
-### Markdown
+### Will add some more stuff later!
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
