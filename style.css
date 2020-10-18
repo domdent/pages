@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?Ubuntu");
 
 body {
-    background-color: lightslategrey;
+    background-color: #edf0f1;
     height: 100%;
     font-family: "Ubuntu", Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 h1 {
     font-size: 40px;
-    color: #edf0f1;
+    color: lightslategrey;
 }
 
 li, a {
-    color: #edf0f1;
+    color: lightslategrey;
     text-decoration: none;
 }
 
@@ -20,7 +20,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
+}
+
+.nav {
+    background-color:  white;
+    border-radius: 10px;
 }
 
 .nav_bar {
@@ -38,5 +43,32 @@ header {
 }
 
 .nav_bar li a:hover{
+    color: #0088a9;
+}
+
+.nav_socials {
+    list-style: none;
+}
+
+.nav_socials li {
+    font-size: 25px;
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav_socials li a {
+    transition: all 0.2s ease 0s;
+}
+
+.nav_socials li a:hover{
+    color: #0088a9;
+}
+
+.nav_logo {
+    transition: all 0.2s ease 0s;
+}
+
+.nav_logo:hover{
     color: #0088a9;
 }
