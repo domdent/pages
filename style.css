@@ -20,12 +20,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 1px 5%;
 }
 
 .nav {
     background-color:  white;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .nav_bar {
@@ -71,4 +71,35 @@ header {
 
 .nav_logo:hover{
     color: #0088a9;
+}
+
+
+/* 
+index page
+*/
+#profile_picture {
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 50%;
+}
+
+/* 
+other pages
+*/
+.page_body {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 17px;
 }
