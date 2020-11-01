@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css?Ubuntu");
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/Ubuntu-Medium.ttf') format('truetype')
+}
 
 body {
     background-color: #01c5c4;
     height: 100%;
-    font-family: "Ubuntu", Impact, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Ubuntu', Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 h1 {
