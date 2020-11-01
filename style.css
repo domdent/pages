@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css?Ubuntu");
 
 body {
-    background-color: #edf0f1;
+    background-color: #01c5c4;
     height: 100%;
     font-family: "Ubuntu", Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 h1 {
-    font-size: 40px;
-    color: lightslategrey;
+    font-size: 22px;
+    color: #eeeeee;
+    text-transform: uppercase;
 }
 
+
 li, a {
-    color: lightslategrey;
+    color: #eeeeee;
     text-decoration: none;
 }
 
@@ -20,12 +22,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 5%;
+    padding: 0px 5%;
 }
 
 .nav {
-    background-color:  white;
-    border-radius: 15px;
+    background-color:  #01c5c4;
+    border-radius: 7px;
 }
 
 .nav_bar {
@@ -33,13 +35,13 @@ header {
 }
 
 .nav_bar li {
-    font-size: 25px;
+    font-size: 22px;
     display: inline-block;
     padding: 0px 20px;
 }
 
 .nav_bar li a {
-    transition: all 0.2s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .nav_bar li a:hover{
@@ -51,14 +53,14 @@ header {
 }
 
 .nav_socials li {
-    font-size: 25px;
+    font-size: 22px;
     display: inline-block;
     padding: 0px 20px;
 
 }
 
 .nav_socials li a {
-    transition: all 0.2s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .nav_socials li a:hover{
@@ -66,14 +68,21 @@ header {
 }
 
 .nav_logo {
-    transition: all 0.2s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .nav_logo:hover{
     color: #0088a9;
 }
 
-
+#profile_icon {
+    margin: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    border-radius: 50%;
+}
 /* 
 index page
 */
@@ -92,7 +101,7 @@ other pages
 .page_body {
     padding: 10px;
     border-radius: 5px;
-    background-color: white;
+    color: #EEEEEE;
     text-align: center;
     margin: 15px;
     margin-left: auto;
@@ -101,5 +110,11 @@ other pages
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-size: 17px;
+    font-size: 20px;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

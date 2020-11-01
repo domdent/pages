@@ -14,25 +14,45 @@
 
 <body>
     <header class="nav">
-        <a href="index.html"><h1 class="nav_logo">Dom Dent</h1></a>
+        <a href="index.html"><h1 class="nav_logo">DOM DENT</h1></a>
         <nav>
             <ul class="nav_bar">
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-        <div class="nav_socials">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/dominicdent/">LinkedIn</a></li>
-                <li><a href="https://www.github.com/domdent/">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/dominicdent/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.github.com/domdent/" target="_blank">GitHub</a></li>
             </ul>
         </div>
     </header> 
 
     <div class="page_body">
+        <h3>MPhys Thesis Research Project</h3>
         <p>
-            I am yet to write up about my projects!
+            This project started as an investigation into the efficiency of the Grand Tour 
+            algorithm to generate "good" 2D projections of a high dimensional dataset with 
+            multiple classifications with me and my lab partner. A classic example use of the 
+            Grand Tour would be an animation of a rotating 3D cube on a 2D screen. Below is an 
+            example of a video made by stitching together projections produced by the Grand Tour. 
         </p>
+        <div class="video">
+            <video width="45%" autoplay loop>
+                <source src="media/ncyl.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p>
+            As the object rotates we can start to discern some of the structure of the object 
+            as we look at the sequential frames of the 2D projections.<br><br>
+            For the project we used this idea and applied it to abstract high dimensional 
+            datasets, we then applied machine learning models to the projected 2D dataset. 
+            The Grand Tour is not a quick or efficient way to find the best 2D projection for 
+            a dataset so we decided to explore better ways of doing this.<br><br>
+            This is when we started exploring the Grassmannian and Stiefel manifold spaces, 
+            and with this we looked at optimisation alogirthms on these spaces. This 
+            eventually led us to develop a novel genetic algorithm on the Stiefel manifold.
+    
+        </p>
+              
     </div>
 
 </body>
