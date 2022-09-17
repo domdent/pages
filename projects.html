@@ -1,59 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
     <title>Dom Dent</title>
-    <meta name="description" content="Personal website of Dom Dent"/>
-    <meta name="author" content="Dom Dent"/>
-    <link rel="shortcut icon" type="image/png" href="img/testlogo.png"/>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta name="description" content="Personal website of Dom Dent" />
+    <meta name="author" content="Dom Dent" />
+    <link rel="shortcut icon" type="image/png" href="img/testlogo.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-</head>
-
-<body>
-    <header class="nav">
-        <a href="index.html"><h1 class="nav_logo">DOM DENT</h1></a>
-        <nav>
-            <ul class="nav_bar">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="https://www.linkedin.com/in/dominicdent/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.github.com/domdent/" target="_blank">GitHub</a></li>
-            </ul>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html"><h1 class="nav-logo">DOM DENT</h1></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="underline">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/dominicdent/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="https://www.github.com/domdent/" target="_blank">GitHub</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar hover"></span>
+          <span class="bar hover"></span>
+          <span class="bar hover"></span>
         </div>
-    </header> 
+      </nav>
+      <script src="script/script.js"></script>
+    </header>
 
     <div class="page_body">
-        <h3>MPhys Thesis Research Project</h3>
-        <p>
-            This project started as an investigation into the efficiency of the Grand Tour 
-            algorithm to generate "good" 2D projections of a high dimensional dataset with 
-            multiple classifications. A classic example use of the 
-            Grand Tour would be an animation of a rotating 3D cube on a 2D screen. Below is an 
-            example of a video made by stitching together projections produced by the Grand Tour. 
-        </p>
-        <div class="video">
-            <video width="45%" autoplay loop>
-                <source src="media/ncyl.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <p>
-            As the object rotates we can start to discern some of the structure of the object 
-            as we look at the sequential frames of the 2D projections.<br><br>
-            For the project we used this idea and applied it to abstract high dimensional 
-            datasets, we then applied machine learning models to the projected 2D dataset. 
-            The Grand Tour is not a quick or efficient way to find the best 2D projection for 
-            a dataset so we decided to explore better ways of doing this.<br><br>
-            This is when we started exploring the Grassmannian and Stiefel manifold spaces, 
-            and with this we looked at optimisation alogirthms on these spaces. This 
-            eventually led us to develop a novel genetic algorithm on the Stiefel manifold.
-    
-        </p>
-              
+      <h3>MPhys Thesis Research Project</h3>
+      <p>Optimisation algorithms on the Stiefel manifold</p>
+      <a
+        class="hover"
+        href="https://github.com/domdent/TheGrandTour/blob/master/MPhys%20Report.pdf"
+        target="_blank"
+        >👉 Link to full write up 👈</a
+      >
+      <p>
+        This project started as an investigation into the efficiency of the
+        Grand Tour algorithm to generate "good" 2D projections of a high
+        dimensional dataset with multiple classifications. A classic example use
+        of the Grand Tour would be an animation of a rotating 3D cube on a 2D
+        screen. Below is an example of a video made by stitching together
+        projections produced by the Grand Tour.
+      </p>
+      <div class="video">
+        <video width="45%" autoplay loop>
+          <source src="media/ncyl.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p>
+        As the object rotates we can start to discern some of the structure of
+        the object as we look at the sequential frames of the 2D projections.<br /><br />
+        For the project we used this idea and applied it to abstract high
+        dimensional datasets, we then applied machine learning models to the
+        projected 2D dataset. The Grand Tour is not a quick or efficient way to
+        find the best 2D projection for a dataset so we decided to explore
+        better ways of doing this.<br /><br />
+        This is when we started exploring the Grassmannian and Stiefel manifold
+        spaces, and with this we looked at optimisation alogirthms on these
+        spaces. This eventually led us to develop a novel genetic algorithm on
+        the Stiefel manifold.
+      </p>
     </div>
-
-</body>
+  </body>
 </html>

@@ -1,20 +1,22 @@
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('fonts/Ubuntu-Medium.ttf') format('truetype')
+    font-family: 'JosefinSans';
+    src: url('fonts/JosefinSans.ttf') format('truetype')
 }
 
 body {
-    background-color: #01c5c4;
+    background-color: black;
     height: 100%;
-    font-family: 'Ubuntu', Impact, 'Arial Narrow Bold', sans-serif;
+    font-family: 'JosefinSans', Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 h1 {
-    font-size: 22px;
+    font-size: 23px;
     color: #eeeeee;
     text-transform: uppercase;
 }
-
+h3 {
+    text-align: center;
+}
 
 li, a {
     color: #eeeeee;
@@ -29,53 +31,34 @@ header {
 }
 
 .nav {
-    background-color:  #01c5c4;
+    display: flex;
     border-radius: 7px;
+    width: 100%;
+    align-items: center;
 }
 
-.nav_bar {
-    list-style: none;
+.nav-item {
+    justify-content: center
 }
 
-.nav_bar li {
-    font-size: 22px;
-    display: inline-block;
-    padding: 0px 20px;
+
+.nav-logo {
+    transition: all 0.3s ease 0.05s;
 }
 
-.nav_bar li a {
-    transition: all 0.4s ease 0s;
-}
-
-.nav_bar li a:hover{
+.nav-logo:hover{
     color: #0088a9;
 }
 
-.nav_socials {
-    list-style: none;
+.hover {
+    transition: all 0.3s ease 0.05s;
 }
-
-.nav_socials li {
-    font-size: 22px;
-    display: inline-block;
-    padding: 0px 20px;
-
-}
-
-.nav_socials li a {
-    transition: all 0.4s ease 0s;
-}
-
-.nav_socials li a:hover{
+.hover:hover{
     color: #0088a9;
 }
 
-.nav_logo {
-    transition: all 0.4s ease 0s;
-}
-
-.nav_logo:hover{
-    color: #0088a9;
+.underline {
+    text-decoration: underline;
 }
 
 #profile_icon {
@@ -105,19 +88,107 @@ other pages
     padding: 10px;
     border-radius: 5px;
     color: #EEEEEE;
-    text-align: center;
+    text-align: left;
     margin: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 80%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     height: 100%;
     font-size: 20px;
 }
 
-#video {
+.video {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+
+.nav-menu {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    font-size: 22px;
+    display: inline-block;
+    padding: 0px 12px;
+}
+
+.nav-menu li a {
+    transition: all 0.2s ease 0.05s;
+}
+
+.nav-menu li a:hover{
+    color: #0088a9;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center
+}
+
+.hamburger{
+    transition: all 0.4s ease 0.05s;
+}
+.hamburger:hover .bar{
+    background-color: #0088a9;
+}
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background-color: white;
+    border-radius: 20%;
+}
+
+
+@media(max-width:700px) {
+    .hamburger{
+        display: block;
+        margin-left: auto;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg)
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg)
+    }
+    
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        transition: 0.2s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
 }
