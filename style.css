@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-size: 23px;
+    font-size: 35px;
     color: #eeeeee;
     text-transform: uppercase;
 }
@@ -38,7 +38,8 @@ header {
 }
 
 .nav-item {
-    justify-content: center
+    justify-content: center;
+    font-size: 25px;
 }
 
 
@@ -61,25 +62,6 @@ header {
     text-decoration: underline;
 }
 
-#profile_icon {
-    margin: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30px;
-    border-radius: 50%;
-}
-/* 
-index page
-*/
-#profile_picture {
-    margin: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    border-radius: 50%;
-}
 
 /* 
 other pages
@@ -97,7 +79,7 @@ other pages
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .video {
@@ -115,7 +97,7 @@ other pages
 }
 
 .nav-menu li {
-    font-size: 22px;
+    font-size: 28px;
     display: inline-block;
     padding: 0px 12px;
 }
@@ -157,7 +139,7 @@ other pages
 }
 
 
-@media(max-width:700px) {
+@media(max-width:800px) {
     .hamburger{
         display: block;
         margin-left: auto;
