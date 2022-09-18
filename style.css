@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 30px;
     color: #eeeeee;
     text-transform: uppercase;
 }
@@ -79,7 +79,7 @@ other pages
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .video {
@@ -97,7 +97,7 @@ other pages
 }
 
 .nav-menu li {
-    font-size: 28px;
+    font-size: 22px;
     display: inline-block;
     padding: 0px 12px;
 }
@@ -172,5 +172,9 @@ other pages
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .page_body {
+        font-size: 16px;
     }
 }
