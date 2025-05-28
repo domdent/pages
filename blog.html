@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Blog - Dom Dent</title>
-    <meta name="description" content="Blog posts by Dom Dent about physics, machine learning, and technology" />
+    <meta name="description" content="Blog posts by Dom Dent about software, machine learning, and technology" />
     <meta name="author" content="Dom Dent" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="img/testlogo.png" />
@@ -39,8 +39,20 @@
       <section class="blog-list">
         <article class="blog-summary" onclick="window.location.href='blog/rotating-cubes-to-manifold-hacks.html'">
           <div class="blog-preview">
-            <video autoplay loop muted playsinline>
+            <video 
+              autoplay 
+              loop 
+              muted 
+              playsinline
+              preload="metadata"
+              class="blog-video"
+              poster="media/ncyl-poster.jpg"
+              disablePictureInPicture
+              controlsList="nodownload"
+            >
               <source src="media/ncyl.mp4" type="video/mp4" />
+              <source src="media/ncyl.webm" type="video/webm" />
+              <source src="media/ncyl.ogg" type="video/ogg" />
               Your browser does not support the video tag.
             </video>
           </div>
