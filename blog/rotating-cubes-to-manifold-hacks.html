@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>From Rotating Cubes to Manifold Hacks - Dom Dent</title>
+    <meta name="description" content="Exploring high-dimensional data visualization through the lens of physics and machine learning" />
+    <meta name="author" content="Dom Dent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="../img/testlogo.png" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="../index.html" class="name"><h1 class="nav-logo">DOM DENT</h1></a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="../index.html">About</a></li>
+          <li class="nav-item"><a href="../blog.html" class="underline">Blog</a></li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/dominicdent/" target="_blank">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.github.com/domdent/" target="_blank">GitHub</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <script src="../script/script.js"></script>
+    </header>
+
+    <main class="page_body">
+      <article class="blog-entry">
+        <header>
+          <h1>From Rotating Cubes to Manifold Hacks</h1>
+          <p class="blog-meta">Spring 2019 · <em>MPhys Thesis Project</em></p>
+        </header>
+
+        <section class="blog-content">
+          <p>
+            Back in my final year for my master's degree, I was handed a deceptively simple challenge: <em>"Make sense of high-dimensional data by staring at 2-D pictures of it."</em>
+          </p>
+
+          <p>
+            The classic trick for that is the <strong>Grand Tour</strong> - an algorithm that rotates an <em>n</em>-D dataset so quickly that a 2-D screen feels like a window into higher dimensions (imagine animating a cube until the 3-D shape pops out). Fun, but painfully slow. I wanted something faster and smarter.
+          </p>
+
+          <div class="video">
+            <video width="55%" autoplay loop>
+              <source src="../media/ncyl.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <p>
+            That curiosity dragged me down a rabbit-hole of geometry called the <strong>Stiefel manifold</strong>. Think of it as the space of all possible "camera angles" you can point at an <em>n</em>-D dataset, more formally they are matrices that represent orthonormal frames that you can use to transform the data. Instead of blindly spinning the cube, I could <em>optimise</em> over those angles and jump straight to the most informative view.
+          </p>
+
+          <h2>First brush with machine learning</h2>
+          <p>
+            To judge which view was "informative," I used a linear <strong>Support Vector Machine</strong> hinge-loss as my cost function. That one decision—bolting a tiny ML model onto a physics-style optimisation problem—was my gateway drug to machine learning.
+            Debugging gradients felt exactly like checking Lagrangians in mechanics, just with Python instead of pen-and-paper.
+          </p>
+
+          <h2>Four algorithms went into the ring</h2>
+          <ul>
+            <li><strong>Vanilla gradient descent</strong> – nice and deterministic, but loves local minima.</li>
+            <li><strong>Stochastic gradient descent</strong> – same idea, plus a random kick to escape ruts.</li>
+            <li><strong>Particle-swarm optimisation</strong> – a flock of candidate projections chasing the best performer.</li>
+            <li><strong>Genetic algorithm on the Stiefel manifold</strong> – crossover via geodesics, mutations via random tangent kicks.</li>
+          </ul>
+
+          <p>
+            That genetic approach was the real breakthrough: blending two parent projections along the manifold's "straightest path" meant every child <em>already</em> satisfied the orthogonality constraints. It felt less like numerical hacking and more like sculpting in curved space.
+          </p>
+
+          <h2>Why it still feels like physics</h2>
+          <p>
+            The maths is pure differential geometry—geodesics, Cayley transforms, even the Sherman-Morrison-Woodbury trick for fast matrix inverses. Swapping "phase space" for "manifold of frames" kept the project firmly in my physics comfort zone while delivering ML-style results.
+          </p>
+
+          <h2>Results in two bullet points</h2>
+          <ul>
+            <li><strong>Wine dataset (13 features, 3 classes)</strong> – found a 2-D projection with 100% linear separability in seconds.</li>
+            <li><strong>Breast-cancer dataset (30 features, 2 classes)</strong> – 98.2% accuracy on unseen data, matching the full 30-D SVM while throwing away 28 dimensions.</li>
+          </ul>
+
+          <h2>Take-aways for the tech folks</h2>
+          <ul>
+            <li><strong>Geometry matters.</strong> Sometimes the best optimisation landscape isn't Euclidean.</li>
+            <li><strong>Physics intuition transfers.</strong> If you've ever minimised an action, you already grok gradient descent on a manifold.</li>
+            <li><strong>Creativity lives in constraints.</strong> By respecting the Stiefel manifold's rules, the genetic algorithm turned a clunky search into an elegant dance.</li>
+          </ul>
+
+          <p>
+            I walked into this project thinking "data visualisation." I walked out hooked on machine learning, armed with a toolbox of manifold tricks, and convinced that the border between physics and ML is mostly paperwork.
+          </p>
+
+          <p>
+            👉 <a href="https://github.com/domdent/TheGrandTour/blob/master/MPhys%20Report.pdf" target="_blank">Read the full write-up (PDF)</a>
+          </p>
+
+          <footer class="blog-signoff">
+            <p>— Dom</p>
+          </footer>
+        </section>
+      </article>
+    </main>
+  </body>
+</html> 

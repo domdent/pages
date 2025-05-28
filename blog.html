@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog - Dom Dent</title>
+    <meta name="description" content="Blog posts by Dom Dent about physics, machine learning, and technology" />
+    <meta name="author" content="Dom Dent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="img/testlogo.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="name"><h1 class="nav-logo">DOM DENT</h1></a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">About</a></li>
+          <li class="nav-item"><a href="blog.html" class="underline">Blog</a></li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/dominicdent/" target="_blank">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.github.com/domdent/" target="_blank">GitHub</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <script src="script/script.js"></script>
+    </header>
+
+    <main class="page_body">
+      <h1>Blog</h1>
+      <section class="blog-list">
+        <article class="blog-summary" onclick="window.location.href='blog/rotating-cubes-to-manifold-hacks.html'">
+          <div class="blog-preview">
+            <video autoplay loop muted playsinline>
+              <source src="media/ncyl.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="blog-content">
+            <header>
+              <h2><a href="blog/rotating-cubes-to-manifold-hacks.html">From Rotating Cubes to Manifold Hacks</a></h2>
+              <p class="blog-meta">Spring 2019 · <em>MPhys Thesis Project</em></p>
+            </header>
+            <p class="blog-excerpt">
+              Back in my final year for my master's degree, I was handed a deceptively simple challenge: <em>"Make sense of high-dimensional data by staring at 2-D pictures of it."</em> This led me down a fascinating path combining physics, geometry, and machine learning...
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html> 
